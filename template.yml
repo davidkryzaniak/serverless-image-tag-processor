@@ -33,7 +33,7 @@ Resources:
 Outputs:
   URL:
     Description: "API endpoint"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
+    Value: !Sub "https://${ApiGatewayEndpoint}.execute-api.${AWS::Region}.amazonaws.com/Prod/"
   ApiKey:
     Description: "(Request HEADER 'x-api-key') You can find your API Key in the AWS console:"
     Value: !Sub "https://console.aws.amazon.com/apigateway/home?region=${AWS::Region}#/api-keys/${ApiGatewayEndpointApiKey}"
